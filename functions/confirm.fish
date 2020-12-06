@@ -1,4 +1,19 @@
 #!/usr/bin/env fish
-set script_dir (realpath (dirname (status --current-filename)))
+function confirm
+    while true
+        read --local --prompt=confirm_prompt answer
+        switch $answer
+            case '' N n
+                # echo '(n)'
+                return 1
+            case Y y
+                #  echo '(y)'
+                return 0
+        end
+    end
+end
 
-bass source $script_dir/confirm
+function confirm_prompt
+    echo '(y/n)'
+end
+confirm2

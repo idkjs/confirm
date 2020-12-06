@@ -1,6 +1,6 @@
 # confirm
 
-[`confirm`](https://github.com/peterpme/dotfiles/blob/master/bin/confirm) wrapper for fish using [bass](https://github.com/edc/bass).
+[`confirm`](https://github.com/peterpme/dotfiles/blob/master/bin/confirm) port for fish shell.
 
 ## Installation
 
